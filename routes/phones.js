@@ -7,6 +7,7 @@ const router = express.Router();
 router.get("/", function (req, res) {
   Phone.find()
     .then((data) => {
+      res.header("Access-Control-Allow-Origin", "*");
       res.json(data);
     })
     .catch((error) => {
