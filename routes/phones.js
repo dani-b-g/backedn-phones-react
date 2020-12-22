@@ -20,7 +20,7 @@ router.get("/", function (req, res) {
       res.json(data);
     })
     .catch((error) => {
-      res.json({ Error: "Error with the BBDD" });
+      res.json({ Error: "Error with the DataBase" });
     });
 });
 /**
@@ -46,7 +46,7 @@ router.get("/:id", function (req, res) {
       res.json(data);
     })
     .catch((error) => {
-      res.json({ Error: "Error with the BBDD" });
+      res.json({ Error: "Error with the DataBase" });
     });
 });
 
