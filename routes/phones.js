@@ -8,7 +8,7 @@ const router = express.Router();
  * @swagger
  * /phone:
  *  get:
- *    description: Use to request all phones
+ *    summary: Use to request all phones
  *    responses:
  *      '200':
  *        description: A successful response
@@ -27,7 +27,7 @@ router.get("/", function (req, res) {
  * @swagger
  * /phone/{id}:
  *  get:
- *    summary: Use to request all phones
+ *    summary: Use to request the information of 1 phone by id
  *    parameters:
  *      - in: path
  *        name: id
