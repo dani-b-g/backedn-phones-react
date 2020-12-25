@@ -43,7 +43,7 @@ router.get("/:id", function (req, res) {
   Phone.find({ id: req.params.id })
     .then((data) => {
       res.header("Access-Control-Allow-Origin", "*");
-      res.json(data);
+      res.json(data[0]);
     })
     .catch((error) => {
       res.json({ Error: "Error with the DataBase" });
