@@ -1,7 +1,7 @@
-# Sistem dependencies
+# System dependencies
 FROM node:14.15
 
-WORKDIR /app
+WORKDIR /app/backend
 
 COPY package*.json ./
 
